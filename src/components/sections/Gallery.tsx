@@ -3,10 +3,10 @@ import PhotoFrame from '@/components/PhotoFrame';
 import type { PhotoSlot } from '@/lib/types';
 
 const photos: PhotoSlot[] = [
-  { id: 'p7', label: 'Photo 7', ratio: 'wide', caption: 'stunning', image: '/gallery/gallary.pic.jpeg' },
-  { id: 'p8', label: 'Photo 8', ratio: 'portrait', caption: 'cute', image: '/gallery/gallary.pic1.jpeg' },
-  { id: 'p9', label: 'Photo 9', ratio: 'landscape', caption: 'magnificient', image: '/gallery/gallary.pic2.jpeg' },
-  { id: 'p10', label: 'Photo 10', ratio: 'square', caption: 'smile that lights up my mood', image: '/gallery/gallary.pic3.jpeg' },
+  { id: 'p7', label: 'Photo 7', ratio: 'wide', caption: 'stunning', image: `${import.meta.env.BASE_URL}gallery/gallery.jpeg` },
+  { id: 'p8', label: 'Photo 8', ratio: 'portrait', caption: 'cute', image: `${import.meta.env.BASE_URL}gallery/gallery.pic1.jpeg` },
+  { id: 'p9', label: 'Photo 9', ratio: 'landscape', caption: 'magnificient', image: `${import.meta.env.BASE_URL}gallery/gallery.pic2.jpeg` },
+  { id: 'p10', label: 'Photo 10', ratio: 'square', caption: 'smile that lights up my mood', image: `${import.meta.env.BASE_URL}gallery/gallery.pic3.jpeg` },
 ];
 
 export default function Gallery() {

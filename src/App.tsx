@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen">
-      <audio ref={audioRef} src="/calm-ocean-waves.mp3" loop />
+      <audio ref={audioRef} src={`${import.meta.env.BASE_URL}calm-ocean-waves.mp3`} loop />
       <div className={isLoggedIn ? '' : 'h-screen overflow-hidden'}>
         <VideoBackground />
         <Nav />

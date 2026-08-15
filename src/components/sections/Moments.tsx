@@ -3,10 +3,10 @@ import PhotoFrame from '@/components/PhotoFrame';
 import type { PhotoSlot } from '@/lib/types';
 
 const photos: PhotoSlot[] = [
-  { id: 'p3', label: 'Photo 3', ratio: 'square', caption: 'that smile', image: '/moments/moments.pic.jpeg' },
-  { id: 'p4', label: 'Photo 4', ratio: 'portrait', caption: 'shines like a star', image: '/moments/moments.pic1.jpeg' },
-  { id: 'p5', label: 'Photo 5', ratio: 'landscape', caption: 'adorable', image: '/moments/moments.pic2.jpeg' },
-  { id: 'p6', label: 'Photo 6', ratio: 'wide', caption: 'breathtaking', image: '/moments/moments.pic3.jpeg' },
+  { id: 'p3', label: 'Photo 3', ratio: 'square', caption: 'that smile', image: `${import.meta.env.BASE_URL}moments/moments.pic.jpeg` },
+  { id: 'p4', label: 'Photo 4', ratio: 'portrait', caption: 'shines like a star', image: `${import.meta.env.BASE_URL}moments/moments.pic1.jpeg` },
+  { id: 'p5', label: 'Photo 5', ratio: 'landscape', caption: 'adorable', image: `${import.meta.env.BASE_URL}moments/moments.pic2.jpeg` },
+  { id: 'p6', label: 'Photo 6', ratio: 'wide', caption: 'breathtaking', image: `${import.meta.env.BASE_URL}moments/moments.pic3.jpeg` },
 ];
 
 export default function Moments() {

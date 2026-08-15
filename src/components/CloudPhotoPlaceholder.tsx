@@ -33,7 +33,7 @@ export const CLOUD_CONFIGS: CloudSlot[] = [
     floatDuration: 6.2,
     floatDelay: 0,
     sparklePos: { top: '-6px', right: '12px' },
-    image: '/mainpage/whatsapp1.jpeg',
+    image: `${import.meta.env.BASE_URL}mainpage/whatsapp1.jpeg`,
   },
   {
     id: 'cloud-2',
@@ -51,7 +51,7 @@ export const CLOUD_CONFIGS: CloudSlot[] = [
     floatDuration: 7.0,
     floatDelay: 0.4,
     sparklePos: { top: '-8px', left: '16px' },
-    image: '/mainpage/whatsapp2.jpeg',
+    image: `${import.meta.env.BASE_URL}mainpage/whatsapp2.jpeg`,
   },
   {
     id: 'cloud-3',
@@ -69,7 +69,7 @@ export const CLOUD_CONFIGS: CloudSlot[] = [
     floatDuration: 5.8,
     floatDelay: 0.8,
     sparklePos: { bottom: '-4px', left: '20%' },
-    image: '/mainpage/whatsapp3.jpeg',
+    image: `${import.meta.env.BASE_URL}mainpage/whatsapp3.jpeg`,
   },
 ];
 
@@ -84,11 +84,11 @@ export default function CloudPhotoPlaceholder({ slot, index }: { slot: CloudSlot
         reduce
           ? undefined
           : {
-              opacity: 1,
-              scale: 1,
-              y: [0, -7, 0],
-              rotate: index % 2 === 0 ? [0, 1.5, 0] : [0, -1.5, 0],
-            }
+            opacity: 1,
+            scale: 1,
+            y: [0, -7, 0],
+            rotate: index % 2 === 0 ? [0, 1.5, 0] : [0, -1.5, 0],
+          }
       }
       transition={{
         opacity: { duration: 1, delay: 1.4 + slot.floatDelay },

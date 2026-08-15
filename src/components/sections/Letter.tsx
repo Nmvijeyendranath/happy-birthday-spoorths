@@ -6,9 +6,9 @@ import angelimg from '../../../assets/angel.png';
 import angelimg1 from '../../../assets/angel (1).png';
 
 const photos: PhotoSlot[] = [
-  { id: 'p1', label: 'Photo 1', ratio: 'portrait', caption: 'my goodness, the eyes', image: '/letter/letter.pic.jpeg' },
-  { id: 'p2', label: 'Photo 2', ratio: 'landscape', caption: 'Golden Hour', image: '/letter/letter.pic1.jpeg' },
-  { id: 'p3', label: 'Photo 3', ratio: 'square', caption: 'victorias secret model', image: '/letter/letter.pic2.jpeg' },
+  { id: 'p1', label: 'Photo 1', ratio: 'portrait', caption: 'my goodness, the eyes', image: `${import.meta.env.BASE_URL}letter/letter.pic.jpeg` },
+  { id: 'p2', label: 'Photo 2', ratio: 'landscape', caption: 'Golden Hour', image: `${import.meta.env.BASE_URL}letter/letter.pic1.jpeg` },
+  { id: 'p3', label: 'Photo 3', ratio: 'square', caption: 'victorias secret model', image: `${import.meta.env.BASE_URL}letter/letter.pic2.jpeg` },
 ];
 
 export default function Letter() {

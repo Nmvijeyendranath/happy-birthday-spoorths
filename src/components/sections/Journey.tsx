@@ -23,31 +23,31 @@ type JourneyStop = {
 const stops: JourneyStop[] = [
   {
     id: 'p1',
-    slot: { id: 'p1', label: 'Photo 1', ratio: 'square', caption: 'the beginning', image: '/journey/journey.pic.jpeg' },
+    slot: { id: 'p1', label: 'Photo 1', ratio: 'square', caption: 'the beginning', image: `${import.meta.env.BASE_URL}journey/journey.pic.jpeg` },
     message: 'A whole world arriving all at once. Tiny hands, big dreams, and a smile that lit up the room.',
     align: 'left',
   },
   {
     id: 'p2',
-    slot: { id: 'p2', label: 'Photo 2', ratio: 'portrait', caption: 'small hands', image: '/journey/journey.pic1.jpeg' },
+    slot: { id: 'p2', label: 'Photo 2', ratio: 'portrait', caption: 'small hands', image: `${import.meta.env.BASE_URL}journey/journey.pic1.jpeg` },
     message: 'Still figuring out how big the sky was. Every day was a new adventure waiting to happen.',
     align: 'right',
   },
   {
     id: 'p3',
-    slot: { id: 'p3', label: 'Photo 3', ratio: 'square', caption: 'growing', image: '/journey/journey.pic2.jpeg' },
+    slot: { id: 'p3', label: 'Photo 3', ratio: 'square', caption: 'growing', image: `${import.meta.env.BASE_URL}journey/journey.pic2.jpeg` },
     message: 'Somewhere in here, the tide started turning. Finding your own voice and leaving a little sparkle everywhere.',
     align: 'left',
   },
   {
     id: 'p4',
-    slot: { id: 'p4', label: 'Photo 4', ratio: 'portrait', caption: 'almost there', image: '/journey/journey.pic3.jpeg' },
+    slot: { id: 'p4', label: 'Photo 4', ratio: 'portrait', caption: 'almost there', image: `${import.meta.env.BASE_URL}journey/journey.pic3.jpeg` },
     message: 'Closer to the person you were always becoming. Strong, resilient, and blooming beautifully.',
     align: 'right',
   },
   {
     id: 'p5',
-    slot: { id: 'p5', label: 'Photo 5', ratio: 'landscape', caption: 'now', image: '/journey/journey.pic4.jpeg' },
+    slot: { id: 'p5', label: 'Photo 5', ratio: 'landscape', caption: 'now', image: `${import.meta.env.BASE_URL}journey/journey.pic4.jpeg` },
     message: 'And here you are — a stunning, capable young woman of twenty. Exactly, finally, wonderfully you.',
     align: 'left',
   },
@@ -140,9 +140,9 @@ function Sparkle({ delay, className }: { delay: number; className: string }) {
       viewBox="0 0 24 24"
       fill="currentColor"
       className={`absolute text-sunset-300 drop-shadow-sm ${className}`}
-      animate={reduce ? undefined : { 
+      animate={reduce ? undefined : {
         scale: [0.8, 1.2, 0.8],
-        opacity: [0.5, 1, 0.5] 
+        opacity: [0.5, 1, 0.5]
       }}
       transition={{ duration: 2, repeat: Infinity, delay, ease: "easeInOut" }}
     >

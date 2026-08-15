@@ -9,9 +9,12 @@ export default function VideoBackground() {
         className="absolute inset-0 h-full w-full object-cover opacity-70"
         style={{ filter: 'blur(4px)' }}
       >
-        <source src="/background.mp4" type="video/mp4" />
+        <source
+          src={`${import.meta.env.BASE_URL}background.mp4`}
+          type="video/mp4"
+        />
       </video>
-      
+
       {/* Optional: Add a subtle dark overlay to ensure text remains readable */}
       <div className="absolute inset-0 bg-black/30" />
     </div>
